@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="style.css">
+            <title>Peter's Portolio</title>
+        </head>
+        <STYLE>A {text-decoration: none;} </STYLE>
+        <body>
+            
+            
+            <header>
+                <nav>
+                  <ul>
+                    <li><a href="index.html">Home</li> <li><a href="aboutme.html">About</a></li>
+                  </ul>
+                </nav>
+            </header>
+            
+            <main>
+                
+                <h1 onclick="changeText(this)">Peter Photography<h1>
+                
+                <img src="MZC01866.jpeg" class="titleImage" id="landscape" onclick="changeImage(this)">
+                
+                <table>
+                    <tr>
+                        <th>Time</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>30 mins</td>
+                        <td>$30</td>
+                    </tr>
+                    <tr>
+                        <td>1 hour</td>
+                        <td>$50</td>
+                    </tr>
+                </table>
+                
+                    <p id="date">Today's Date</p>
+
+                <a href="https://www.petermzc.com">
+                    <img src="510-instagram.jpg" class="instagrambio">
+                </a>
+            </main>
+                <script>
+                    function changeImage(id) {
+                      id.src = "photo.jpg";
+                    }
+                    var d = new Date();
+                    document.getElementById("date").innerHTML = d.toDateString();
+                    function changeText(id) {
+                      id.innerHTML = "Ooops!";
+                    }
+                    
+                </script>
+        </body>
+</html>

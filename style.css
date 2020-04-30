@@ -1,0 +1,91 @@
+@media only screen and (max-width: 650px) {
+  body {
+    background-color: lightblue;
+  }
+  
+  table{
+      font-size:15px;
+  }
+  
+  .about_me_image{
+      position:relative;
+      margin: 0;
+      padding:0;
+  }
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#date{
+    font-size: 30px;
+}
+
+h1{
+    font-size:80px;
+    padding 10px 0;
+}
+
+main{
+    text-align: center;
+    position:relative;
+    top:90px;
+}
+
+.titleImage{
+    width: 100%;
+    height: auto;
+}
+
+table{
+    border: 1px solid black;
+    width:100%;
+}
+
+table th{
+    height:50px;
+    
+}
+
+header{
+    position:fixed;
+    width:100%;
+    background-color: black;
+    z-index:10;
+}
+
+nav {
+    margin: 0;
+    padding: 0 10px;
+    text-align: left;
+}
+
+li {
+    color: #FFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    display:inline-block;
+    width:80px;
+}
+
+.instagrambio{
+    max-width:50px;
+}
+
+.about_me_image{
+    height:500px;
+    float: left;
+    padding: 0 10px;
+    margin: 20px 0 0 200px;
+}
+.bio{
+    position:relative;
+    font-size:30px;
+    width:300px;
+    float:right;
+    margin: 20px 300px 0 0;
+}
