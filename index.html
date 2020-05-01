@@ -6,8 +6,6 @@
         </head>
         <STYLE>A {text-decoration: none;} </STYLE>
         <body>
-            
-            
             <header>
                 <nav>
                   <ul>
@@ -15,11 +13,10 @@
                   </ul>
                 </nav>
             </header>
-            
             <main>
                 
-                <h1 onclick="changeText(this)">Peter Photography<h1>
-                
+                <h1 onclick="changeText(this);playSong();">Peter Photography<h1>
+                    
                 <img src="MZC01866.jpeg" class="titleImage" id="landscape" onclick="changeImage(this)">
                 
                 <table>
@@ -39,11 +36,19 @@
                 
                     <p id="date">Today's Date</p>
 
-                <a href="https://www.petermzc.com">
+                <a href="https://www.instagram.com/petermzc">
                     <img src="510-instagram.jpg" class="instagrambio">
                 </a>
+                <audio id="My_heart">
+                  <source src="song.mp3" type="audio/mpeg">
+                </audio>
             </main>
                 <script>
+                    var song = document.getElementById("My_heart");
+
+                    function playSong() {
+                        song.play();
+                    }
                     function changeImage(id) {
                       id.src = "photo.jpg";
                     }
