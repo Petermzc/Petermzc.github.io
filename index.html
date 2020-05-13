@@ -47,7 +47,8 @@
                     var song = document.getElementById("My_heart");
 
                     function playSong() {
-                        song.play();
+                        var audio = new Audio("Song.mp3");
+                        audio.play();
                     }
                     function changeImage(id) {
                       id.src = "photo.jpg";
